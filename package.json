@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prepare": "rimraf dist", 
+    "build:assets": "copyfiles -e src/**/*.ts -u 1 src/**/* dist",
+    "build": "pnpm build:prepare && tsc -d && pnpm build:assets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2"
+  }
+}
