@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const TailwindConfig = {
     content: ["./src/*/**.tsx"],
     darkMode: "class",
@@ -11,5 +10,5 @@ const TailwindConfig = {
         },
     },
 };
-exports.default = TailwindConfig;
+module.exports = TailwindConfig;
 //# sourceMappingURL=index.js.map
