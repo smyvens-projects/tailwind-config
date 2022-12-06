@@ -2,13 +2,15 @@
   "name": "tailwind-config",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build:prepare": "rimraf dist", 
     "build:assets": "copyfiles -e src/**/*.ts -u 1 src/**/* dist",
     "build": "pnpm build:prepare && tsc -d && pnpm build:assets"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Smyvens",
   "license": "ISC",
