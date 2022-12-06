@@ -11,4 +11,3 @@ const TailwindConfig = {
     },
 };
 module.exports = TailwindConfig;
-//# sourceMappingURL=index.js.map

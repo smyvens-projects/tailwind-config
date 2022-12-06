@@ -6,11 +6,12 @@
   "scripts": {
     "build:prepare": "rimraf dist", 
     "build:assets": "copyfiles -e src/**/*.ts -u 1 src/**/* dist",
-    "build": "pnpm build:prepare && tsc -d && pnpm build:assets"
+    "build": "pnpm build:prepare && tsc && pnpm build:assets"
   },
   "files": [
     "dist"
   ],
+  "typings": "dist/types/index.d.ts",
   "keywords": [],
   "author": "Smyvens",
   "license": "ISC",
