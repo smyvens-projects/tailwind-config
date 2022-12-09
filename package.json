@@ -4,9 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build:prepare": "rimraf dist", 
-    "build:assets": "copyfiles -e src/**/*.ts -u 1 src/**/* dist",
-    "build": "pnpm build:prepare && tsc && pnpm build:assets"
+    "build": "rimraf dist && tsc"
   },
   "files": [
     "dist"
@@ -19,7 +17,6 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
     "rimraf": "^3.0.2"
   }
 }

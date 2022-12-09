@@ -1,3 +1,5 @@
+import colors from "tailwindcss/colors";
+
 import { Config } from "tailwindcss";
 
 const TailwindConfig: Config = {
@@ -6,7 +8,9 @@ const TailwindConfig: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#eab208",
+        primary: colors.yellow,
+        secondary: colors.emerald,
+        container: colors.slate,
       },
     },
   },
